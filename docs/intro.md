@@ -274,7 +274,7 @@ pnpm type-check   # Run TypeScript checks
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/mercho40/openforum/blob/main/LICENSE) file for details.
 
 ## 🆘 Support
 
