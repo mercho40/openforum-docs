@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'OpenForum Docs',
-  tagline: 'OpenForum is an open source forum platform',
+  tagline: 'A modern, full-featured forum application built with Next.js 15',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -25,7 +25,7 @@ const config: Config = {
   organizationName: 'openforum', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -41,11 +41,12 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/mercho40/openforum-docs/tree/main/',
+            'https://github.com/mercho40/openforum-docs/edit/main/',
         },
         // blog: {
         //   showReadingTime: true,
@@ -99,33 +100,40 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Getting Started',
+              to: '/getting-started',
+            },
+            {
+              label: 'Configuration',
+              to: '/configuration',
+            },
+            {
+              label: 'Deployment',
+              to: '/deployment',
             },
           ],
         },
         {
           title: 'Community',
           items: [
-            // {
-            //   label: 'Stack Overflow',
-            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            // },
-            // {
-            //   label: 'Discord',
-            //   href: 'https://discordapp.com/invite/docusaurus',
-            // },
-            // {
-            //   label: 'X',
-            //   href: 'https://x.com/docusaurus',
-            // },
+            {
+              label: 'GitHub Issues',
+              href: 'https://github.com/mercho40/openforum/issues',
+            },
+            {
+              label: 'Discussions',
+              href: 'https://github.com/mercho40/openforum/discussions',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
             {
               label: 'GitHub',
               href: 'https://github.com/mercho40/openforum',
             },
           ],
-        },
-        {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Openforum, Inc .`,
